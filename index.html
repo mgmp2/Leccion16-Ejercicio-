@@ -4,21 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Operaciones Matematicas</title>
 </head>
 <body>
-  <form>
+  <h2 align ="center"> Mini-Calculadora </h2>
+  <form class="" action="index.html" method="post" align="center">
     <div >
       <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" id = "nombre">
+      <input type="text" name="nombre" id = "nombre" type="text" pattern="[A-Za-z]{3,1000}" autofocus="autofocus" required>
     </div>
     <div >
       <label for="num1">Numero 1</label>
-      <input type="text" name="num1" id = "num1">
+      <input type="number" min="1" max="10" step="1" name="num1" id = "num1" required>
     </div>
-    <div >
-      <label for="operacion">Operacion</label>
-      <select id="operacion">
+    <div>
+      <label for="operacion">Elige la operacion</label>
+      <select id="operacion" required>
+        <option value="">Ninguno</option>
         <option value="1">Suma</option>
         <option value="2">Resta</option>
         <option value="3">Division</option>
@@ -27,15 +29,15 @@
         <option value="6">Potencia</option>
       </select>
     </div>
-    <div >
+    <br>
+    <div>
       <label for="num2">Numero 2</label>
       <input type="text" name="num2" id="num2">
       <button type="button" onclick="operacion(); return false;">Enviar</button>
-
+      </div>
   <div id="result"></div>
 </form>
   <script src = "js/main.js">
-
   </script>
 </body>
 </html>
