@@ -7,19 +7,32 @@
   var op = document.getElementById('operacion').value;
   var result;
   switch (op) {
-    case "1": result = num1 + num2; break;
-    case "2": result = num1 - num2; break;
-    case "3": result = num1 / num2; break;
-    case "4": result = num1 * num2; break;
+    case "1": 
+	result = num1 + num2; 
+	break;
+    case "2": 
+	result = num1 - num2; 
+	break;
+    case "3": 
+	result = num1 / num2; 
+	break;
+    case "4": 
+	result = num1 * num2; 
+	break;
+    case "5": 
+	result = Math.pow(num1,(1/num2));
+	break;
+    case "6": 
+	result =Math.pow(num1,num2); 
+	break;
   }
 	var r =confirm ("¿Desea Continuar?");
 	  if(r==true){
-	  num1=result;
-		  document.getElementById("num1").value=num1;
-	  
-	  }
+	  	num1=result;
+		document.getElementById("num1").value=num1;
+	  	}
 	  else{
 	  alert(result);
-	  }
+	      }
   
 }
