@@ -10,15 +10,15 @@
   <form class="" action="index.html" method="post">
     <div >
       <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" id = "nombre">
+      <input type="text" name="nombre" id = "nombre" type="text" pattern="[A-Za-z]{3,100}" autofocus="autofocus" required>
     </div>
     <div >
       <label for="num1">Numero 1</label>
-      <input type="text" name="num1" id = "num1">
+      <input type="number" min="1" max="10" step="1" name="num1" id = "num1" required>
     </div>
     <div >
-      <label for="operacion">Operacion</label>
-      <select id="operacion">
+      <label for="operacion">Elige la operacion</label>
+      <select id="operacion" required>
         <option value="suma">Suma</option>
         <option value="resta">Resta</option>
         <option value="div">Division</option>
@@ -27,10 +27,12 @@
         <option value="potencia">Potencia</option>
       </select>
     </div>
+    <br>
     <div >
       <label for="num2">Numero 2</label>
-      <input type="text" name="num2" id="num2">
-      <button type="submit" name="button">Enviar</button>
+      <input type="number" min="1" max="10" step="1" name="num2" id="num2" required>
+      <br>
+      <button name="button">Operar</button>
     </div>
 
   </form>
