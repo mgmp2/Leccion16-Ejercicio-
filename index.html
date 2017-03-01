@@ -7,18 +7,20 @@
   <title>Document</title>
 </head>
 <body>
-  <form class="" action="index.html" method="post">
+  <h2 align ="center"> Mini-Calculadora </h2>
+  <form class="" action="index.html" method="post" align="center">
     <div >
       <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" id = "nombre" type="text" pattern="[A-Za-z]{3,100}" autofocus="autofocus" required>
+      <input type="text" name="nombre" id = "nombre" type="text" pattern="[A-Za-z]{3,1000}" autofocus="autofocus" required>
     </div>
     <div >
       <label for="num1">Numero 1</label>
       <input type="number" min="1" max="10" step="1" name="num1" id = "num1" required>
     </div>
-    <div >
+    <div>
       <label for="operacion">Elige la operacion</label>
       <select id="operacion" required>
+        <option value="">Ninguno</option>
         <option value="suma">Suma</option>
         <option value="resta">Resta</option>
         <option value="div">Division</option>
@@ -28,16 +30,14 @@
       </select>
     </div>
     <br>
-    <div >
+    <div>
       <label for="num2">Numero 2</label>
       <input type="number" min="1" max="10" step="1" name="num2" id="num2" required>
       <br>
+      </div>
       <button name="button">Operar</button>
-    </div>
-
   </form>
   <script src = "js/main.js">
-
   </script>
 </body>
 </html>
