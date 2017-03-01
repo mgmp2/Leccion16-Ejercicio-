@@ -11,5 +11,5 @@ bt.onclick() = function(){
     case 3: result = num1 / num2; break;
     case 4: result = num1* num2; break;
   }
-  document.getElementById("result").innerHTML = 2;
+  document.getElementById("result").innerHTML = result;
 }
