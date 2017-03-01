@@ -10,13 +10,13 @@
   <h2 align ="center"> Mini-Calculadora </h2>
   <form class="" action="index.html" method="post" align="center">
     <div >
-      <label for="nombre">Nombre</label>
+      <label for="nombre">Nombre: </label>
       <input type="text" name="nombre" id = "nombre" type="text" pattern="[A-Za-z]{3,1000}" autofocus="autofocus" required>
-    </div>
+    </div><br>
     <div >
-      <label for="num1">Numero 1</label>
+      <label for="num1">Numero 1: </label>
       <input type="number" min="1" max="10" step="1" name="num1" id = "num1" required>
-    </div>
+    </div><br>
     <div>
       <label for="operacion">Elige la operacion</label>
       <select id="operacion" required>
@@ -28,12 +28,12 @@
         <option value="5">Raiz</option>
         <option value="6">Potencia</option>
       </select>
-    </div>
+    </div><br>
     <br>
     <div>
-      <label for="num2">Numero 2</label>
-      <input type="text" name="num2" id="num2">
-    </div>
+      <label for="num2">Numero 2 :</label>
+      <input type="number" min ="1" max ="10" step ="1" name="num2" id="num2" required>
+    </div><br>
   <button onclick="siguiente();return false ;">Enviar</button>
   </form>
   <div>
