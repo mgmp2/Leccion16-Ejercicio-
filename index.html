@@ -7,15 +7,16 @@
   <title>Document</title>
 </head>
 <body>
-  <form class="" action="index.html" method="post">
+  <h2 align ="center"> Mini-Calculadora </h2>
+  <form class="" action="index.html" method="post" align="center">
     <div >
       <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" id = "nombre">
-    </div>
+      <input type="text" name="nombre" id = "nombre" pattern="^([A-Za-z])*$" required>
+    </div><br>
     <div >
       <label for="num1">Numero 1</label>
-      <input type="text" name="num1" id = "num1">
-    </div>
+      <input type="text" name="num1" id = "num1" pattern="^[1-9]||10$" required>
+    </div><br>
     <div >
       <label for="operacion">Operacion</label>
       <select id="operacion">
@@ -26,12 +27,12 @@
         <option value="raiz">Raiz</option>
         <option value="potencia">Potencia</option>
       </select>
-    </div>
+    </div><br>
     <div >
       <label for="num2">Numero 2</label>
-      <input type="text" name="num2" id="num2">
+      <input type="text" name="num2" id="num2" pattern="^[1-9]||10$" required><br><br>
       <button type="submit" name="button">Enviar</button>
-    </div>
+    </div><br>
 
   </form>
   <script src = "js/main.js">
