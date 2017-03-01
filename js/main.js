@@ -1,4 +1,4 @@
-function operacion(){
+  function operacion(){
   var num1 = document.getElementById('num1').value;
   num1 = parseInt(num1);
   var num2 = document.getElementById('num2').value;
