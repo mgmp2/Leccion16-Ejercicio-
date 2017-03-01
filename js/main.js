@@ -1,21 +1,25 @@
-function datos(){
-  var nombre=document.getElementById("nombre").value;
-  var num1=document.getElementById("num1").value;
-  var num2=document.getElementById("num2").value;
+  
+  function siguiente(){
+  var num1 = document.getElementById('num1').value;
+  num1 = parseInt(num1);
+  var num2 = document.getElementById('num2').value;
+  num2 = parseInt(num2);
+  var op = document.getElementById('operacion').value;
+  var result;
+  switch (op) {
+    case "1": result = num1 + num2; break;
+    case "2": result = num1 - num2; break;
+    case "3": result = num1 / num2; break;
+    case "4": result = num1 * num2; break;
   }
-function siguiente(){
-var num1=document.getElementById("num1").value;
-var num2=document.getElementById("num2").value;
-  {var txt;
-   var r =confirm ("¿Desea Continuar?");
-   if(r==true){
-     num1=result;
-     document.getElementById("num1").value= num1;
-     alert(num1);
-   }
-   else{
-     alert(result);
-   }
-  }
-
+	var r =confirm ("¿Desea Continuar?");
+	  if(r==true){
+	  num1=result;
+		  document.getElementById("num1").value=num1;
+	  
+	  }
+	  else{
+	  alert(result);
+	  }
+  
 }
